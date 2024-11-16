@@ -1,0 +1,96 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f0f2f5, #ffffff);
+    color: #333;
+    padding-top: 20px;
+}
+
+/* Headers */
+h1, h2 {
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+/* Task Input Section */
+.input-group {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Task Container */
+.task-container {
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow-y: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Card */
+.task-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Priority Labels */
+.priority-low {
+    color: white;
+    background: #198754;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.priority-medium {
+    color: white;
+    background: #ffc107;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.priority-high {
+    color: white;
+    background: #dc3545;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+button.done {
+    background: #198754;
+    color: white;
+}
+
+button.delete {
+    background: #dc3545;
+    color: white;
+}
